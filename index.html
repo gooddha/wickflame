@@ -10,20 +10,178 @@
 
 <style>
   body {
+    font-size: 1.2em;
+  }
+
+  h1 {
     text-align: center;
+    margin: 0.22em;
+  }
+
+  h2 {
+    margin-bottom: -0.5em;
   }
 
   .image {
-    max-width: 100vw;
+    width: 96vw;
+  }
+
+  main section {
+    outline: 1px solid gray;
+    padding: 0.1em 1em;
+    display: flex;
+  }
+
+  main section h2 {
+    flex: 1;
+  }
+
+  main section div {
+    flex: 3.3;
+  }
+
+  #shop ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
   }
 </style>
 
 <body>
 
-  <h1>Wickflame - ароматические свечи ручной работы</h1>
-  <h2><a href="https://instagram.com/wickflame_candles?igshid=7x8h4l67a2nx">Узнать больше</a></h2>
-  <img class="image" src="./wickflame-candle1.jpg" alt="candle">
+  <main>
+    <header>
+      <h1>Wickflame - ароматические свечи ручной работы</h1>
 
+    </header>
+    <!-- <img class="image" src="./wickflame-candle1.jpg" alt="candle"> -->
+
+
+    <section id="about-us">
+      <h2>О нас</h2>
+      <div>
+        <p>
+          Wickflame_candles – это молодой проект об ароматном и эстетическом удовольствии.
+          А я Виктория — создатель этого пространства.
+        </p>
+        <p>
+          Главная идея — использование безопасных и экологичных материалов.
+          Основная задача — создание особой атмосферы в вашем доме.
+        </p>
+        <p>
+          Все, что я делаю — я делаю с любовью, вкладывая душу в каждую свечу.
+          Для меня создание свечей - особый способ медитации,
+          который волшебным образом воздействует, даря гармонию и приятные ощущения.
+        </p>
+        <p>
+          Я и мои свечи помогут вам испытать это удивительное чувство спокойствия и гармонии.
+        </p>
+      </div>
+    </section>
+
+    <section id="shop">
+      <h2>Магазин</h2>
+      <div>
+        <h3>Вашему выбору доступны 3 категории свечей</h3>
+        <ul>
+          <li>
+            <div class="shop-section" id="relax">
+              <h4>RELAX</h4>
+            </div>
+          </li>
+          <li>
+            <div class="shop-section" id="glass">
+              <h4>GLASS</h4>
+            </div>
+          </li>
+          <li>
+            <div class="shop-section" id="minimalism">
+              <h4>MINIMALISM</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <h2>Наши преимущества</h2>
+      <div>
+        <ol>
+          <li>
+            <h3>Экологичность</h3>
+            <p>Используем только 100% соевый воск и ингредиенты премиум класса.</p>
+          </li>
+          <li>
+            <h3>Полностью ручная работа</h3>
+          </li>
+          <li>
+            <h3>Практичность</h3>
+            <p>Соевые свечи горят в два раза дольше парафиновых.</p>
+          </li>
+          <li>
+            <h3>Польза</h3>
+            <p>
+              Соевый воск безопасен для здоровья и окружающей среды.
+              При его горении не выделяются канцерогены и другие вредные вещества.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="feedback">
+      <h2>Отзывы</h2>
+      <div>
+        <p id="feedback-intro">
+          Я с трепетом отношусь к вашим отзывам и для меня ценен каждый.
+          Ваши добрые слова вдохновляют на развитие и наполняют меня новыми идеями.
+          Очень радостно, что люди не стесняются делиться своими эмоциями.
+        </p>
+        <ul id="feedback-photos">
+          <li>Photo 1</li>
+          <li>Photo 2</li>
+          <li>Photo 3</li>
+          <li>Photo ...</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="delievery">
+      <h2>Доставка</h2>
+      <div>
+
+        <p>Доставка заказов осуществляется один раз в неделю по субботам</p>
+        <p>
+          Доставка по стране осуществляется СДЭК и Почтой России:
+          <ul>
+            <li>Стоимость доставки СДЭК от 350 руб</li>
+            <li>Доставка Почтой Росии 400 руб</li>
+          </ul>
+        </p>
+        <p>
+          Доставка по Республике Крым
+          <ul>
+            <li>Отправка СДЭК. Стоимость от 250 руб</li>
+            <li>Самовывоз в Симферополе (после сообщения о готовности заказа).</li>
+          </ul>
+        </p>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <div>
+        <p>Будь ближе к нам!</p>
+        <p style="font-size: 1em">
+          <a href="https://instagram.com/wickflame_candles?igshid=7x8h4l67a2nx">
+            @wickflame_candles
+          </a>
+        </p>
+      </div>
+    </section>
+
+  </main>
 </body>
 
 </html>
