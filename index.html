@@ -4,18 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ароматические свечи ручной работы c доставкой по Крыму и России. Ингридиенты премиум-класса, экологически чистое сырье, бесподобные ароматы">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wickflame | Ароматические свечи ручной работы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Prata&display=swap" rel="stylesheet">
 </head>
 
 <style>
   body {
-    font-size: 1.2em;
-  }
-
-  h1 {
-    text-align: center;
-    margin: 0.22em;
+    font-family: 'Anonymous Pro', monospace;
+    /* font-family: 'Prata', serif; */
+    font-size: 1.3em;
+    background-color: rgb(250, 250, 250);
   }
 
   h2 {
@@ -27,22 +30,34 @@
   }
 
   main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
-  main section {
-    border-bottom: 1px solid gray;
+  main section,
+  main header {
     padding: 0.1em 1em;
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: auto auto;
+  }
+
+  main header h1 {
+    text-align: left;
+    margin: 0.22em;
+    grid-column: 2;
   }
 
   main section h2 {
-    flex: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 0.15em;
   }
 
   main section div {
-    flex: 3.3;
+    grid-row: 2;
+    grid-column: 2/3;
+    margin-bottom: 1.2em;
   }
 
   #shop ul {
@@ -51,13 +66,18 @@
     display: flex;
     justify-content: space-evenly;
   }
+
+  #advantages p,
+  #advantages h3 {
+    margin: 0.5em;
+  }
 </style>
 
 <body>
 
   <main>
     <header>
-      <h1>Wickflame - ароматические свечи ручной работы</h1>
+      <h1>Wickflame <br> ароматические свечи ручной работы</h1>
 
     </header>
     <!-- <img class="image" src="./wickflame-candle1.jpg" alt="candle"> -->
@@ -67,7 +87,8 @@
       <h2>О нас</h2>
       <div>
         <p>
-          Wickflame_candles – это молодой проект об ароматном и эстетическом удовольствии.
+          <a href="https://instagram.com/wickflame_candles?igshid=7x8h4l67a2nx">
+            Wickflame_candles </a> – это молодой проект об ароматном и эстетическом удовольствии.
           А я Виктория — создатель этого пространства.
         </p>
         <p>
