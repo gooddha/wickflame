@@ -34,19 +34,15 @@
     margin: 0 auto;
   }
 
-  main section {
-    padding: 0.1em 1em;
-    display: grid;
-    grid-template-columns: 0.4fr 2fr;
-    grid-template-rows: auto auto;
-  }
-
-  main header h1 {
+  header {
     border: 2em solid #efd7ad;
     padding: 2em;
     display: grid;
     grid-template-columns: 2.4fr 2fr;
     grid-template-rows: auto auto;
+  }
+
+  main header h1 {
     margin-top: 0;
     grid-gap: 0 9em;
   }
@@ -61,6 +57,13 @@
     text-align: left;
     grid-column: 2;
     grid-row: 2;
+  }
+
+  main section {
+    padding: 0.1em 1em;
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: auto auto;
   }
 
   main section h2 {
@@ -86,15 +89,24 @@
   #advantages h3 {
     margin: 0.5em;
   }
+
+  @media screen and (max-width: 500px) {
+    header {
+      display: block;
+    }
+  }
 </style>
 
 <body>
 
   <main>
     <header>
-      <h1>
-        <span id="header-left">Wickflame candles</span>
-        <span id="header-right">ароматические свечи ручной работы</span></h1>
+      <h1 id="header-left">
+        Wickflame candles
+      </h1>
+      <h2 id="header-right">
+        ароматические свечи ручной работы
+      </h2>
 
     </header>
     <!-- <img class="image" src="./wickflame-candle1.jpg" alt="candle"> -->
